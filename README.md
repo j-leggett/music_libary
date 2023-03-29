@@ -1,1 +1,1 @@
-music libray
+music library
