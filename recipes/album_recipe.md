@@ -124,7 +124,14 @@ class StudentRepository
     # Executes the SQL query:
     # SELECT id, title, release_year, artist_id FROM albums;
 
-    # Returns an array of Albums objects.
+    # Returns an array of Album objects.
+  end
+
+  def find(id)
+    # Executes the SQL query:
+      # SELECT id, title, release_year, artist_id FROM albums WHERE id = $1;
+
+    # Returns a single Album object.
   end
 
 ```

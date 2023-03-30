@@ -45,5 +45,18 @@ describe AlbumRepository do
     expect(albums.length).to eq 2
   end
 
+  it "returns the first single Album object" do
+    repo = AlbumRepository.new
+
+    albums = repo.find(1)
+    expect(albums.id).to eq '1'
+    expect(albums.title).to eq 'Graduation'
+    expect(albums.release_year).to eq '2007'
+    expect(albums.artist_id).to eq '1'
+  end
+
+
+
+
   
 end
